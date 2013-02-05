@@ -1,6 +1,6 @@
 <head><meta charset="utf-8">
 <!-- TITLE AND FAVICON =========================================================================================================-->
-  <title>the Servo Elastic Actuator | sprocket</title>
+  <title>Serial Elastic Actuator | sprocket</title>
   <link rel="icon" type="image/png" href="graph-bl.png">
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -52,9 +52,26 @@
 	width: 580px;
 }
 
+#github {
+  position: absolute;
+  top:   4px;
+  left: 4px;
+  height: 32px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#github a img:hover{
+  position: relative; 
+  top: -32px;
+} 
+
 </style>
 </head>
 <body>
+
+<div id="github"><a href="https://github.com/bqpd/sprocket" title="bqpd/2a-graphs">
+  <img alt="link to this project on github" src="github.png" width="32px"/></a></div>
 
 <div id="shadow">
 <div id="display">
@@ -84,7 +101,7 @@
 </div>
 </div>
 	<div id="sidebar">
-		<span id="logo"><a href="index.html"> sprocket: </a></span><span id="project"> the Serial Elastic Actuator </span>
+		<span id="logo">&nbsp;&nbsp;&nbsp;<a href="index.html"> sprocket: </a></span><span id="project"> Serial Elastic Actuator </span>
 		<table>
 		<tr id="firstrow"> <td colspan="10"> <div class="block" id="datasources" onclick="toggleView();"> toggle view </div></td></tr>
 		<tr id="lastrow"><td colspan="10"> <div class="block" id="addlayer" onclick="addFunction();"> add a function</div></td></tr>

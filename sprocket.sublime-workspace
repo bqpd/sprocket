@@ -95,7 +95,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 9939,
+				"buffer_size": 10295,
 				"line_ending": "Unix",
 				"name": "<head>"
 			}
@@ -128,7 +128,7 @@
 			"file": "/home/macx/projects/2a-graphs/index.html",
 			"settings":
 			{
-				"buffer_size": 17482,
+				"buffer_size": 17802,
 				"line_ending": "Unix"
 			}
 		}
@@ -449,7 +449,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -457,15 +457,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 9939,
+						"buffer_size": 10295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4562,
-								4562
+								1692,
+								1692
 							]
 						],
 						"settings":
@@ -475,7 +475,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1354.0,
+						"translation.y": 936.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -492,8 +492,8 @@
 						"selection":
 						[
 							[
-								359,
-								359
+								360,
+								360
 							]
 						],
 						"settings":
@@ -566,15 +566,15 @@
 					"file": "/home/macx/projects/2a-graphs/index.html",
 					"settings":
 					{
-						"buffer_size": 17482,
+						"buffer_size": 17802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								0,
+								0
 							]
 						],
 						"settings":
