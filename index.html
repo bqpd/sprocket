@@ -66,6 +66,10 @@
   top: -32px;
 } 
 
+#intro {
+	width: 580px;
+}
+
 </style>
 </head>
 <body>
@@ -74,7 +78,22 @@
   <img alt="link to this project on github" src="github.png" width="32px"/></a></div>
 
 <div id="shadow">
-<div id="display">
+<div id="intro">
+	<h1>test-driving instructions</h1>
+	Too often, we feel, mechanical engineers design case-specific solutions to general problems: calculations are done, and their end result (after catalog-scouring) is a choice of one bolt. We shouldn't need to keep rewriting the same equations and re-scanning the same catalogs: we should tell the computer how to do the calculations only once, and then let the machine handle repetition.
+	<h2> how to use sprocket</h2>
+	This is a proof-of-concept: given requirements (specified in 'Requirements' on the left) and a overall optimization goal ('Cost'), these scripts will compare thousands of springs, along with options for motors and encoders, to reach an optimal design for a serial elastic actuator.
+	<ul>
+		<li> Starting with 'Motor Data', click on each grey sidebar button in turn and click 'Save & Run' in the upper right corner of the main window. The button will turn red when the script has been run.
+		<li> Running the 'Spring Finder' and 'SEA Generator' scripts may take up to 30 seconds; if your browser complains, tell it to keep going. Those scripts run through the various combinations of over 12000 springs to find the best option, and with the current algorithim that takes a little while.
+		<li> Finally, run the 'SEA Visualizer' and see the resulting Bill of Materials!
+	</ul>
+	<h2>we need to know what you think</h2>
+		How could this be more useful? Where are we on the wrong track, and where on the right? <span style="font-weight: 700; text-decoration: underline;"><a href="mailto:eburn@mit.edu">Please email us.</a></span>
+	<p>
+	<i>P.S. - You can also use the 'add function' button to create your own scripts that work off of these data sources, or click on the names of existing scripts to change them.</i>
+</div>
+<div id="display" class="invisible">
   <img id="diagram" src="series.png" style="margin-left: 20px;"></img>
   <div id="lbSpring" class="label"><p class="droplabel"> B </p> <span class="sprpart1">ZZ1-46</span><br><span class ="sprpart2">M-13</span></div>
   <div id="lbSensor" class="label"><p class="droplabel"> C </p> <span class="senpart">630-HEDS-9000-U00</span></div>
@@ -103,7 +122,8 @@
 	<div id="sidebar">
 		<span id="logo">&nbsp;&nbsp;&nbsp;<a href="index.html"> sprocket: </a></span><span id="project"> Serial Elastic Actuator </span>
 		<table>
-		<tr id="firstrow"> <td colspan="10"> <div class="block" id="datasources" onclick="toggleView();"> toggle view </div></td></tr>
+		<tr id="firstrow"><td colspan="1">  <div class="block" id="showhelp" onclick="showHelp();"> readme </div></td>
+						  <td colspan="10"> <div class="block" id="datasources" onclick="toggleView();"> toggle view </div></td></tr>
 		<tr id="lastrow"><td colspan="10"> <div class="block" id="addlayer" onclick="addFunction();"> add a function</div></td></tr>
 		</table>
 	</div>
@@ -134,6 +154,7 @@ for (var i = 0; i < rows.length; i++) {
 
 changeFunction(c_id);
 drawFunctions();
+showHelp();
 
 // funs = [{'name',title','hasrun','output','row'}]
 // rows[0] = [fnnames,in,row1]
@@ -247,6 +268,7 @@ function changeFunction(id) {
 	if ($('#'+c_id).hasClass('hasrun')) { $('#'+id).addClass('selrun'); }
 	$('#function').removeClass('invisible');
 	$('#display').addClass('invisible');
+	$('#intro').addClass('invisible');
 }
 
 function drawFunctions() {
@@ -280,8 +302,15 @@ function drawFunctions() {
 }
 
 function toggleView() {
+	$('#intro').addClass('invisible');
 	$('#function').toggleClass('invisible');
 	$('#display').toggleClass('invisible');
+}
+
+function showHelp() {
+	$('#intro').removeClass('invisible');
+	$('#function').addClass('invisible');
+	$('#display').addClass('invisible');
 }
 
 </script>
