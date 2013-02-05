@@ -1,0 +1,657 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"chang",
+				"changeFunction"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"has",
+				"hasrun"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"add",
+				"addFunction"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"data",
+				"datasources"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"d3",
+				"d3cccc"
+			],
+			[
+				"sp",
+				"letter-spacing"
+			],
+			[
+				"text-d",
+				"text-indent"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"classde",
+				"classdesc"
+			],
+			[
+				"hsl",
+				"hslString"
+			],
+			[
+				"sle",
+				"selectAll"
+			],
+			[
+				"arc",
+				"arc"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 9939,
+				"line_ending": "Unix",
+				"name": "<head>"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 2798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "normalize.css",
+			"settings":
+			{
+				"buffer_size": 7361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/macx/projects/2a-graphs/index.html",
+			"settings":
+			{
+				"buffer_size": 17482,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/macx/projects/mechomp/functions.js",
+		"/home/macx/projects/mechomp/functions.txt",
+		"/home/macx/Downloads/CSC-extension.json",
+		"/home/macx/projects/2a-graphs/csv_to_json.py",
+		"/home/macx/projects/2a-graphs/2a_concentration.json",
+		"/home/macx/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/macx/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/macx/projects/2a-graphs/jquip.js",
+		"/C/Users/pearl/git/2a-graphs/jquery-1.4.2.min.js",
+		"/C/Users/pearl/git/2a-graphs/jquery.poshytip.min.js",
+		"/C/Users/pearl/git/2a-graphs/jquip.q-min.js",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/src/jquery.poshytip.js",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/src/tip-twitter/tip-twitter.css",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/demo/demo.html",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/demo/includes/demos.css",
+		"/C/Users/pearl/git/2a-graphs/poshytip-1.1/src/jquery.poshytip.min.js",
+		"/C/Users/pearl/git/2a-graphs/2a_concentration.json",
+		"/C/Users/pearl/git/2a-graphs/csv_to_json.py",
+		"/C/Users/pearl/git/2a-graphs/conc.csv",
+		"/C/Users/pearl/git/2a-graphs/conc clean.csv",
+		"/C/Users/pearl/Dropbox/portfolio/index.html",
+		"/C/Users/pearl/git/2a-graphs/.gitignore",
+		"/C/Users/pearl/git/2a-graphs/2a_concentration.json.orig",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/2a_concentration.json",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/csv_to_json.py",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/conc clean.csv",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/index.js",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/plugin.css",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/plugin.js",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/tooltip.html",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/index.html",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/flare.json",
+		"/C/Users/pearl/Dropbox/other projects/2a graphs/concentration_classes_cleaned.csv",
+		"/C/Users/pearl/Desktop/treeflying/robotlib/examples/VanDerPol.m",
+		"/C/Users/pearl/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/pearl/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\n",
+			"\\\\n",
+			"\n",
+			"\"",
+			"</td>",
+			"output",
+			"<br>",
+			"</p>",
+			"p class=\"header\"",
+			" <",
+			"font-fam",
+			"titleChan",
+			"run\\?",
+			"run/?",
+			"run?",
+			"id",
+			"funs\\[fn",
+			"funs[fn",
+			"fnname",
+			"current_id",
+			"class=\"span\"",
+			"name",
+			"1em",
+			"function",
+			"<.{0,1}t.>",
+			"<.t.{1,2}>",
+			"<t.{1,2}>",
+			"<tr.>",
+			"<tr?>",
+			">=",
+			"i",
+			"<textarea",
+			"textarea",
+			"\\.text",
+			" text",
+			" text\\(",
+			" text(",
+			".text",
+			"border: none;",
+			"10em",
+			"span",
+			"<td><div ",
+			"</td></div></tr>",
+			"loadT",
+			"textarea",
+			"5px",
+			": 1",
+			"0 0",
+			"em 1em",
+			"1em 1em",
+			": 1",
+			"1em",
+			"</h3> ",
+			"<h3>",
+			"h3",
+			"div",
+			"1em",
+			"div",
+			"10px",
+			"e0",
+			" 0 0",
+			".tooltip",
+			"#reset",
+			"dot",
+			"onclick=",
+			"<a href=\"#(\\w*)\"",
+			">\n",
+			"'(.*?)':",
+			"course",
+			": 0",
+			"0",
+			"in 2A concentrations",
+			"onclick",
+			"what is",
+			"2.722",
+			"d-lab",
+			"EC.710",
+			"d-lab",
+			"EC.701",
+			"d-lab",
+			"EC.711",
+			"d-lab",
+			"EC.721",
+			"EC",
+			",(\\w)",
+			" {2,}",
+			"(\\w{1,3}\\.\\w{1,4})(,.*)\\1,",
+			"(\\w{1,3}\\.\\w{1,4})(,.*)\\1",
+			"(\\w{1,3}\\.\\w{1,4}),.*\\1",
+			"(\\w{1,3}\\.\\w{1,4}).*\\1",
+			"(\\w{1,3}\\.\\w{1,4}.*)\\1",
+			"(\\w{1,3}\\.\\w{1,4}).*(/\\1)",
+			"(\\w{1,3}\\.\\w{1,4}).*(\\1)",
+			"'",
+			"\\n *",
+			"'.*?': ",
+			"2.00",
+			"''\n",
+			"\n",
+			"'",
+			"\\);.*",
+			");.*",
+			"loadTrack",
+			" | ",
+			"mechanics",
+			"energy",
+			"bio",
+			"2em",
+			": 0.1em",
+			"0.1em 0.1em 0.2em 0.1em #555",
+			"0",
+			"1em",
+			"2px",
+			"1px",
+			"px",
+			"5em",
+			"'",
+			"5em",
+			"  ",
+			"5em",
+			",",
+			"yes",
+			"scale",
+			"resize",
+			"e.resize",
+			"resize",
+			"jQuery",
+			"contain"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\\\n",
+			"\\n",
+			"\\\\n",
+			"\\n",
+			"hasrun",
+			"c_id",
+			"",
+			"<textarea spellcheck=\"false\"",
+			"textarea class=\"stext\"",
+			".val",
+			"<a id=\"$1\" href=\"#$1\"",
+			"$1:",
+			"in a 2A concentration",
+			"what's",
+			"2.722J, SP.722",
+			"SP.718",
+			"SP.721, 11.025J",
+			"EC.711, SP.775",
+			", $1",
+			", ($1)",
+			"",
+			"$1$2",
+			"$1",
+			"$1$2",
+			"$1",
+			"",
+			"<br>",
+			"\"",
+			", ",
+			"jquip",
+			"1",
+			"0.75em",
+			"${1}0\\n",
+			"${1}00\\n",
+			"${1}0\\n",
+			"\\{$1\\}0\\n",
+			"{$1}0\\n",
+			"1.0{$1}0\\n",
+			"2.50\\n",
+			".",
+			"",
+			"{   $2,\\n$1$3",
+			"{   $2,\\n        $1$3",
+			"{   $2,\\n    $1$3",
+			"{   $2,\\n$1$3",
+			"{   $2,\\n$1}",
+			"{    $2,\\n$1}",
+			"{ $2,\\n$1}",
+			".",
+			"{ $1}",
+			" \"pop\"",
+			"{ $1 $2}",
+			"22.070\\n",
+			"5.310\\n",
+			"${1}0\\n",
+			"$1\\0\\n",
+			"1.0$10\\n",
+			"1.070\\n",
+			"1.040\\n",
+			"1.020\\n",
+			"1.010\\n",
+			"2.810\\n",
+			"ClassDescs",
+			"Deps",
+			"Data",
+			"\\t\\t\"p",
+			"\\t\"p",
+			"{ $1\\t$2}",
+			" \"p",
+			"{ $1 $2 $3}",
+			"{ $1 $2 $3 }",
+			"{ $1 $2 $3",
+			"{ $1 $2 $3 }",
+			"\\{$1",
+			"{$1",
+			"18.440\\n",
+			"4.500\\n",
+			"\\n.0\\n",
+			".",
+			"",
+			"\",\"",
+			"\"\\n\"",
+			"\\n",
+			"",
+			"\", \"#",
+			", \"#",
+			"'",
+			"course",
+			"class",
+			"all_classes",
+			"\\n",
+			"",
+			","
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 9939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4562,
+								4562
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<head>",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1354.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 2798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2497,
+								2497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1916.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "normalize.css",
+					"settings":
+					{
+						"buffer_size": 7361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1158,
+								1158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 527.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/macx/projects/2a-graphs/index.html",
+					"settings":
+					{
+						"buffer_size": 17482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/pearl/Dropbox/other projects/2a graphs/sunburst concentration.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 130.0,
+	"status_bar_visible": true
+}

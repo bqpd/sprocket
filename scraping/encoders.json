@@ -1,0 +1,177 @@
+[
+    {
+        "part":"630-HEDS-9140-A00",
+        "price":28.16,
+        "resolution":500.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-9100-A00",
+        "price":25.4,
+        "resolution":500.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-9140-I00",
+        "price":28.6,
+        "resolution":512.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"652-PEC11-4020F-S024",
+        "price":1.85,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-9100-B00",
+        "price":25.4,
+        "resolution":1000.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"652-PEL12T4226FS1024",
+        "price":6.09,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"652-PEL12D4225SS2024",
+        "price":3.84,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-9040-B00",
+        "price":25.6,
+        "resolution":1000.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"652-ECW1J-B24-BC24L",
+        "price":3.44,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-9000-U00",
+        "price":25.4,
+        "resolution":2048.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-5605-A06",
+        "price":47.21,
+        "resolution":500.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"774-288X232R161B2",
+        "price":2.97,
+        "resolution":16.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"652-PEC11-4220F-S12",
+        "price":1.85,
+        "resolution":12.0,
+        "type":"",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-5540-A06",
+        "price":47.21,
+        "resolution":500.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"667-EVE-KD2F3024M",
+        "price":1.05,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-5540-A12",
+        "price":47.21,
+        "resolution":500.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"630-HRPG-AD32-13R",
+        "price":30.4,
+        "resolution":32.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"667-EVE-GC2F2524M",
+        "price":1.05,
+        "resolution":24.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-5600-A06",
+        "price":47.21,
+        "resolution":500.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"630-AEDA-3300-TAQ",
+        "price":160.08,
+        "resolution":4000.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDS-5500-A14",
+        "price":47.21,
+        "resolution":500.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"630-HEDM-5500-B11",
+        "price":47.21,
+        "resolution":1000.0,
+        "type":"Encoders Kits",
+        "weight":0.005
+    },
+    {
+        "part":"652-PEC11L4220FS0015",
+        "price":2.27,
+        "resolution":15.0,
+        "type":"Mechanical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HRPG-AD32-16F",
+        "price":30.4,
+        "resolution":32.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    },
+    {
+        "part":"630-HRPG-ASCA-14R",
+        "price":30.4,
+        "resolution":120.0,
+        "type":"Optical Encoders",
+        "weight":0.005
+    }
+]

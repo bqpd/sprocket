@@ -1,0 +1,26 @@
+Thu Jan 31 22:25:33 2013: Bounds too large: 23.31, 35.51
+Thu Jan 31 22:25:38 2013: Bounds too large: 23.31, 29.4
+Thu Jan 31 22:25:48 2013: search successful, bounds 23.31, 26.35
+Thu Jan 31 22:25:48 2013: extracted 70 springs, 2472 total
+Thu Jan 31 22:25:56 2013: Bounds too large: 26.36, 56.76
+Thu Jan 31 22:26:00 2013: Bounds too large: 26.36, 41.56
+Thu Jan 31 22:26:05 2013: Bounds too large: 26.36, 33.96
+Thu Jan 31 22:26:11 2013: Bounds too large: 26.36, 30.16
+Thu Jan 31 22:26:15 2013: search successful, bounds 26.36, 28.26
+Thu Jan 31 22:26:15 2013: extracted 78 springs, 2550 total
+Thu Jan 31 22:26:22 2013: Bounds too large: 28.27, 47.27
+Thu Jan 31 22:26:29 2013: Bounds too large: 28.27, 37.76
+Thu Jan 31 22:26:33 2013: Bounds too large: 28.27, 33.01
+Thu Jan 31 22:26:40 2013: search successful, bounds 28.27, 30.64
+Thu Jan 31 22:26:40 2013: extracted 42 springs, 2592 total
+Thu Jan 31 22:26:45 2013: Bounds too large: 30.65, 54.35
+Thu Jan 31 22:26:52 2013: Bounds too large: 30.65, 42.49
+Thu Jan 31 22:26:56 2013: Bounds too large: 30.65, 36.57
+Thu Jan 31 22:27:02 2013: search successful, bounds 30.65, 33.61
+Thu Jan 31 22:27:02 2013: extracted 59 springs, 2651 total
+Thu Jan 31 22:27:07 2013: Bounds too large: 33.62, 63.22
+Thu Jan 31 22:27:14 2013: Bounds too large: 33.62, 48.41
+Thu Jan 31 22:27:21 2013: Bounds too large: 33.62, 41.01
+Thu Jan 31 22:27:25 2013: search successful, bounds 33.62, 37.31
+Thu Jan 31 22:27:25 2013: extracted 67 springs, 2718 total
+Thu Jan 31 22:27:25 2013: scrape complete

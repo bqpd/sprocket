@@ -1,0 +1,271 @@
+<head><meta charset="utf-8">
+<!-- TITLE AND FAVICON =========================================================================================================-->
+  <title>the Servo Elastic Actuator | sprocket</title>
+  <link rel="icon" type="image/png" href="graph-bl.png">
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<style>
+
+.invisible {
+	display: none;
+}
+
+#lbSpring {
+	top: 316;
+	left: 58;
+	width: 150px;
+}
+
+#lbSensor {
+	top: 310;
+	left: 295;
+	width: 300px;
+}
+
+#lbMotor {
+	top: 12;
+	left: 215;
+	width: 200px;
+}
+
+.label {
+	position: absolute;
+	font-size: 1.5em;
+	line-height: 25px;
+	font-weight: 700;
+}
+
+.droplabel {
+	margin: 10px 0 -10px -45px;
+	font-size: 2em;
+	line-height: 0;
+}
+
+.header {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+#display table {
+	width: 580px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="shadow">
+<div id="display">
+  <img id="diagram" src="series.png" style="margin-left: 20px;"></img>
+  <div id="lbSpring" class="label"><p class="droplabel"> B </p> <span class="sprpart1">ZZ1-46</span><br><span class ="sprpart2">M-13</span></div>
+  <div id="lbSensor" class="label"><p class="droplabel"> C </p> <span class="senpart">630-HEDS-9000-U00</span></div>
+  <div id="lbMotor" class="label"><p class="droplabel">  A </p> <span class="motpart">200141</span> </div>
+  <br><hr><br>
+
+  <span class="header"> A <table style="margin: -30px 0 0 40px;"> <tr><td> <b>Part Number: </b><span class="motpart">200141</span></td> <td> <b>Price: </b>$<span class="motprice">60</span></td><td> <b>Power: </b><span class="motpow">15</span> W</td></table></span><br><br>
+
+  <span class="header"> B <table style="margin: -30px 0 0 40px;"> <tr><td> <b>Part Number 1: </b> <span class="sprpart1">ZZ1-46</span></td> <td> <b>Price: </b> $<span class="sprprice1">120</span></td><td> <b>Stiffness: </b> <span class="sprk1">940</span> N/m</td></tr><tr id="spr2"><td> <b>Part Number 2: </b> <span class="sprpart2">M-13</span></td> <td> <b>Price: </b> $<span class="sprprice2">2</span></td><td> <b>Stiffness: </b> <span class="sprk2">15</span> N/m</td><tr></table></span><br><br>
+
+  <span class="header"> C <table style="margin: -30px 0 0 40px;"> <tr><td> <b>Part Number: </b> <span class="senpart">630-HEDS-9000-U00 </span></td> <td> <b>Price: </b> $<span class="senprice">15</span></td><td> <b>Counts/Revolution: </b> <span class="sencounts">1024</span></td></table></span>
+
+</div>
+<div id="function" class="invisible">
+	<a href="#" onclick="runBox();"><div id="runbtn"> SAVE & RUN </div></a>
+	<textarea spellcheck="false" class="stext" id="fntitle" title="function title" onkeyup="titleChange();"></textarea>
+	<br>
+	<span style="padding-left: 10px;"><i>function name: </i>window.<textarea spellcheck="false" class="stext" id="fnname" title="function name" onkeyup="nameChange();"></textarea></span>
+	<br> <span style="padding-left: 10px"> <i>shown on row: </i><textarea spellcheck="false" class="stext" id="fnrow" maxlength="1" onkeyup="changeRow();"></textarea>
+	<!--	 &nbsp;<span id="rowUp">up</span>&nbsp;&middot;&nbsp;<span id="rowDn">dn</span></span>
+	<br> -->
+	<div style="margin: 10px;"><textarea spellcheck="false" name="editbox" id="editbox" onkeyup="textChangeCheck();"></textarea></div>
+	<div id="rsbox" class="invisible"><span id="rstitle"> output </span><div id="results"></div></div>
+</div>
+</div>
+	<div id="sidebar">
+		<span id="logo"><a href="index.html"> sprocket: </a></span><span id="project"> the Serial Elastic Actuator </span>
+		<table>
+		<tr id="firstrow"> <td colspan="10"> <div class="block" id="datasources" onclick="toggleView();"> toggle view </div></td></tr>
+		<tr id="lastrow"><td colspan="10"> <div class="block" id="addlayer" onclick="addFunction();"> add a function</div></td></tr>
+		</table>
+	</div>
+
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script>
+
+funcs[12] = [];
+funcs[12]['title'] = 'SEA Visualizer';
+funcs[12]['name'] = 'seaVis';
+funcs[12]['row'] = 5;
+funcs[12]['script'] = "function() {\nround = Math.round;\nvar parts = seaGen();\n\nmot = parts[0];\n$('.motname').text(mot['part']);\n$('.motpow').text(mot['power']);\n$('.motprice').text(mot['price']);\n\nsen = parts[1];\n$('.senpart').text(sen['part']);\n$('.sencounts').text(sen['resolution']);\n$('.senprice').text(sen['price']);\n\nspr = parts[2];\nif (!spr['spring1']) {\n$('.sprpart1').text(spr['CSCname']);\n$('.sprk1').text(round(spr['K']*100)/100);\n$('.sprprice1').text(spr['price']);\n$('#diagram').attr('src','single.png');\n\n$('#spr2').addClass('invisible');\n$('.sprpart2').text('');\n$('.sprk2').text('');\n$('.sprprice2').text('');\n}\nelse {\n$('#spr2').removeClass('invisible');\n$('.sprpart1').text(spr['spring1']['CSCname']);\n$('.sprk1').text(round(spr['spring1']['K']*100)/100);\n$('.sprprice1').text(spr['spring1']['price']);\n\n$('.sprpart2').text(spr['spring2']['CSCname']);\n$('.sprk2').text(round(spr['spring2']['K']*100)/100);\n$('.sprprice2').text(spr['spring2']['price']);\n$('#diagram').attr('src',spr['type']+'.png');\n}\n\nif (spr['type'] === 'parallel') {\n$('#lbSensor').css({top: '320',left:'310'});\n$('#lbMotor').css({top: '12',left:'225'});\n$('#lbSpring').css({top: '335',left:'70'});\n}\nelse {\n$('#lbSensor').css({top: '310',left:'295'});\n$('#lbMotor').css({top: '12',left:'215'});\n$('#lbSpring').css({top: '316',left:'58'});\n}\n\ntoggleView();\n\nreturn('Ran succesfully');\n}";
+
+
+
+var funs = funcs,
+	rows = [[0,1,2],[3,4,5],[6,7],[8,9,10],[11],[12]],
+	c_id = 11,
+	num_fun = funs.length+1;
+
+for (var i = 0; i < rows.length; i++) {
+	for (var j = 0; j < rows[i].length; j++) {
+		funs[rows[i][j]]['row'] = i;
+		funs[rows[i][j]]['hasrun'] = false;
+	};
+};
+
+changeFunction(c_id);
+drawFunctions();
+
+// funs = [{'name',title','hasrun','output','row'}]
+// rows[0] = [fnnames,in,row1]
+
+function hasRun(id,justrun) {
+	funs[id]['hasrun'] = justrun;
+	if (justrun) {
+		$('.block#'+id).addClass('hasrun');
+		$("#rsbox").removeClass('invisible');
+		$('#'+c_id).addClass('selrun');
+	}
+	else {
+		$('.block#'+id).removeClass('hasrun');
+		$("#rsbox").addClass('invisible');
+		$('#'+c_id).removeClass('selrun');
+	}
+}
+
+function runBox() {
+	var fnname = $('#fnname').val(),
+	    script = $("#editbox").val(),
+		id = c_id;
+
+	console.log('running '+fnname);
+
+	funs[id]['script'] = script;
+
+	try {
+		eval('window.'+fnname+' = '+script);
+		output = eval('window.'+fnname+'()');
+		funs[id]['output'] = output;
+		output = JSON.stringify(output);
+	}
+	catch(err) {
+		output = 'Error: '+ err.message;
+		$("#rsbox").removeClass('invisible');
+	}
+
+	console.log(output);
+
+	hasRun(id,true);
+	$('#results').text(output);	
+}
+
+function textChangeCheck() {
+	if (funs[c_id]['hasrun']) {
+		if (funs[c_id]['script'] !== $("#editbox").val()) {
+			hasRun(c_id,false);
+		}
+	}
+}
+
+function titleChange() {
+	var newtitle = $('#fntitle').val();
+	$('.block#'+c_id).text(newtitle);
+	funs[c_id]['title'] = newtitle;
+}
+
+function swapColors(selected) {
+	var color = selected.css("color");
+	var bg = selected.css("background-color")
+	selected.css("color",bg);
+	selected.css("background-color",color)
+}
+
+function addFunction() {
+	id = num_fun;
+	num_fun++;
+	var name = 'Func'+id;
+	var row = rows.length;
+	$('#lastrow').before('<tr><td colspan="10"><div onclick="changeFunction('+id+');" class="block" id='+id+'>'+name+'</div></td></tr>');
+	funs[id] = {}
+	funs[id]['name'] = name;
+	funs[id]['title'] = name;
+	funs[id]['hasrun'] = false;
+	funs[id]['row'] = row;
+	funs[id]['script'] = "// Write a function below; use 'window.$VAR' to create global variables. Functions you create are stored under window.$FNNAME, and their outputs automatically cached. Use 'return' to return function results.\n\nfunction() {\nreturn('You have not changed this function yet!');\n}";
+	funs[id]['output'] = "This script has not yet been run."
+	rows[row] = [id];
+	changeFunction(id);
+}
+
+function changeRow() {
+	var newrow = $('#fnrow').val();
+	if (newrow <= rows.length && newrow !== '') {
+		funs[c_id]['row'] = newrow;
+		$('#fnrow').css("color","black");
+		drawFunctions();
+	}
+	else { $('#fnrow').css("color","red"); }
+}
+
+function nameChange() {
+	funs[c_id]['name'] = $('#fnname').val();
+}
+
+function changeFunction(id) {
+	console.log(c_id,id);
+	$('#'+c_id).removeClass('sel');
+	$('#'+c_id).removeClass('selrun');
+	c_id = id;
+	$('#'+id).addClass('sel');
+	$('#fnrow').val(id);
+	$('#fnname').val(funs[id]['name']);
+	$('#fntitle').val(funs[id]['title']);
+	$('#fnrow').val(funs[id]['row']);
+	$("#editbox").val(funs[id]['script']);
+	$('#results').text(funs[id]['output']);	
+	if (funs[id]['output']) { $('#rsbox').removeClass('invisible'); }
+	else { $('#rsbox').addClass('invisible'); }
+	if ($('#'+c_id).hasClass('hasrun')) { $('#'+id).addClass('selrun'); }
+	$('#function').removeClass('invisible');
+	$('#display').addClass('invisible');
+}
+
+function drawFunctions() {
+	rows = [];
+	for (var i = 0; i < funs.length; i++) {
+		var row = funs[i]['row'];
+		console.log(i,row);
+    	if (!rows[row]) { rows[row] = [i]; }
+    	else { rows[row].push(i); }
+	};
+
+	var max_cols = 0;
+	for (var i = 0; i < rows.length; i++) {
+		if (rows[i].length > max_cols) { max_cols = rows[i].length; }
+	};
+
+	$('#function tr').not('#firstrow').not('#lastrow').remove();
+	for (var i = 0; i < rows.length; i++) {
+		cols = rows[i].length;
+		var rowstr = '<tr>'
+		for (var j = 0; j < cols; j++) {
+			var idx = rows[i][j],
+				title = funs[idx]['title'],
+				colspan = Math.floor(max_cols/cols),
+				hasrun = funs[i]['hasrun'] ? ' hasrun' : '';
+			rowstr = rowstr + '<td colspan="'+colspan+'""><div onclick="changeFunction('+idx+');"class="block'+hasrun+'" id='+idx+'>'+title+'</div></td>';
+		};
+		$('#lastrow').before(rowstr+'</tr>');
+	};
+	$('#'+c_id).addClass('sel');
+}
+
+function toggleView() {
+	$('#function').toggleClass('invisible');
+	$('#display').toggleClass('invisible');
+}
+
+</script>
+</body>
